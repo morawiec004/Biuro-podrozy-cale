@@ -1,0 +1,67 @@
+#contact {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactPanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactPanelColumn {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+    background-color: #9acd32;
+    text-align: center;
+    padding: 20px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#mapImage {
+    max-width: 600px;
+}
+
+#contactFormInputGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactFormInput {
+    height: 20px;
+    padding: 10px;
+    max-width: 100px;
+}
+
+#contactFormInputArea {
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#contactFormSubmit {
+    align-self: center;
+}
+
+#map {
+    height: 400px;
+    width: 600px;
+}
+
+#emailConfirmation {
+    visibility: hidden;
+}

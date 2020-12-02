@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <title>Biuro podróży Hello World!</title>
+
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuN06XMDekMHtrsmlBl0__jlmpxTyqiBg&callback=initMap&libraries=&v=weekly"
+        defer
+        >
+        </script>
+
+        <script src="js/map.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/email.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="#top">
+                <img id="logo" src="images/logo/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li class="menuItem">
+                        <a class="menuItemLink" href="#top">Strona główna</a>
+                    </li>
+                    <li class="menuItem">
+                        <a class="menuItemLink" href="#about">O nas</a>
+                    </li>
+                    <li class="menuItem">
+                        <a class="menuItemLink" href="#gallery">Galeria</a>
+                    </li>
+                    <li class="menuItem">
+                        <a class="menuItemLink" href="#services">Oferta</a>
+                    </li>
+                    <li class="menuItem">
+                        <a class="menuItemLink" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <div id="imageContainer">
+                    <img id="aboutImage" src="images/about/about.jpg" alt="about">
+                    <div id="aboutTextContainer">
+                        <h2>O nas</h2>
+                        <p class="aboutText">
+                            Jesteśmy firmą zajmującą się organizacją podróży po całym świecie.
+                            Skontaktuj się z nami, aby pojechać na wyprawę.
+                        </p>
+                        <p class="aboutText">
+                            Działamy na rynku od roku <b>1999</b>, a więc już ponad 20 lat!
+                            Nie wachaj się ani sekundy i wciśnij przycisk, aby się zapisać.
+                        </p>
+                        <div class="btnGroup">
+                            <button class="btn btnPrimary" onclick="document.getElementById('contact').scrollIntoView()">Zapisz się!</button>
+                            <button class="btn btnSecondary">Dowiedz się więcej</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="zoom">
+                            <div class="cardIconBackground">
+                                <img src="images/cards/like.png" class="cardIcon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Jakość</h3>
+                            <p>
+                                Świadczymy usługi o najwyższej jakości. Średnia ocen z ponad 100 głosów to <b>4.7/5</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="zoom">
+                            <div class="cardIconBackground">
+                                <img src="images/cards/star.png" class="cardIcon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Jakość</h3>
+                            <p>
+                                Świadczymy usługi o najwyższej jakości. Średnia ocen z ponad 100 głosów to <b>4.7/5</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="zoom">
+                            <div class="cardIconBackground">
+                                <img src="images/cards/experience.png" class="cardIcon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Jakość</h3>
+                            <p>
+                                Świadczymy usługi o najwyższej jakości. Średnia ocen z ponad 100 głosów to <b>4.7/5</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery">
+                <div id="modal">
+                    <div id="modalContent">
+                        <div id="modalImgContainer">
+                            <button class="modalButton" onclick="onClickLeft()"><</button>
+                            <img src="" id="modalImg" alt="modalImg">
+                            <button class="modalButton" onclick="onClickRight()">></button>
+                        </div>
+                        <button id="exitModalButton" class="modalButton" onclick="onClickExit()">x</button>
+                    </div>
+                </div>
+                <img src="images/gallery/gallery1.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery2.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery3.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery4.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery5.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery6.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery7.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery8.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery9.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery10.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery11.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+                <img src="images/gallery/gallery12.jpg" class="galleryImage" onclick="onClickGalleryImage(this.src)">
+            </section>
+            <section id="contact">
+                <div id="contactPanel">
+                    <div class="contactPanelColumn">
+                        <div id="map"></div>
+                    </div>
+                    <div class="contactPanelColumn">
+                        <h2>Napisz do nas!</h2>
+                        <h4>Nasza obsługa techniczna dostępna jest 24 godziny na dobę,
+                            aby odpowiedzieć na każde <b>Twoje</b> pytanie
+                        </h4>
+                        <h4 id="emailConfirmation">Email został wysłany</h4>
+                        <form action="" id="contactForm">
+                            <div id="contactFormInputGroup">
+                                <input type="text" name="name" id="contactFormInputName" placeholder="Imię" class="contactFormInput">
+                                <input type="text" name="email" id="contactFormInputEmail" placeholder="Email" class="contactFormInput">
+                                <input type="text" name="subject" id="contactFormInputSubject" placeholder="Tytuł" class="contactFormInput">
+                            </div>
+                            <textarea id="contactFormInputArea" name="area" rows="8" cols="50" placeholder="Twoja wiadomość"></textarea>
+                            <input type="button" value="Wyślij" id="contactFormSubmit" class="btn btnPrimary" onclick="sendEmail()">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h4>Stworzone przez &copy; Krzysztof Morawiec</h4>
+        </footer>
+    </body>
+</html>
